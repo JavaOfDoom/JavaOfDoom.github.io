@@ -11,30 +11,50 @@ html, body {
 header {
 	position: fixed;
 	width: 100%;
+	min-height: 60px;
 	background-color: #4A3F67;
 	display: flex;
-	flex-direction: row;
 }
 
-header p {
+
+
+header div {
+	display: flex;
+	justify-content: flex-start;
+	width: 30vw;
+	margin: 10px;
+	font-size: 30px;
 	color: #DBDBDB;
-	align-items: flex-start;
 }
 
 nav {
+	display: flex;
 	justify-content: flex-end;
+	width: 70vw;
+}
+
+nav ul {
+	display: flex;
 	flex-direction: row;
+}
+
+@media (max-width: 600px) {
+	nav ul {
+		display: flex;
+		flex-flow: row wrap;
+	}
 }
 
 nav ul li {
-	text-decoration: none;
 	display: flex;
+	font-size: 30px;
+	margin: 10px;
+	text-decoration: none;
 }
 
 nav ul li a {
-	text-decoration: none;
 	display: flex;
-	flex-direction: row;
+	text-decoration: none;
 	color: #DBDBDB;
 }
 
