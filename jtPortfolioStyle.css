@@ -16,13 +16,18 @@ header {
 	display: flex;
 }
 
-
-
 header div {
 	display: flex;
 	justify-content: flex-start;
+	text-decoration: none;
 	width: 30vw;
 	margin: 10px;
+	padding: 10px;
+}
+
+header a {
+	display: flex;
+	text-decoration: none;
 	font-size: 30px;
 	color: #DBDBDB;
 }
@@ -38,18 +43,29 @@ nav ul {
 	flex-direction: row;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
 	nav ul {
 		display: flex;
 		flex-flow: row wrap;
+		justify-content: center;
+		align-items: center;
 	}
 }
 
 nav ul li {
 	display: flex;
+	padding: 10px;
 	font-size: 30px;
 	margin: 10px;
 	text-decoration: none;
+}
+
+@media (max-width: 650px) {
+	nav ul li {
+		padding: 4px;
+		margin-top: 4px;
+		font-size: 24px;
+	}
 }
 
 nav ul li a {
@@ -69,9 +85,38 @@ h1, h2, h3, h4, h5 {
 	color: #DBDBDB;
 }
 
+h1 {
+	margin: 0 20px;
+	padding: 0 20px;
+}
+
 #Welcome mark {
 	background-color: #252934;
 	color: #92A2CD;
+}
+
+#About {
+	padding: 20px;
+}
+
+#About p {
+	margin: 10px;
+	padding: 10px;
+	text-align: left;
+}
+
+#About a {
+	text-decoration: none;
+	width: 250px;
+	height: 30px;
+	background: #2B3C41;
+	color: #DBDBDB;
+	border: 2px solid #312B41;
+	border-radius: 4px;
+}
+
+#Portfolio {
+	padding: 20px;
 }
 
 .skill-bars {
@@ -103,6 +148,14 @@ h1, h2, h3, h4, h5 {
 	background-color: green;
 	width: 60%;
 	height: 20px;
+}
+
+#Blog {
+	padding: 20px;
+}
+
+#Contact {
+	padding: 20px;
 }
 
 #Contact .fab, .far, .fas {
