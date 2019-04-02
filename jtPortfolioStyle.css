@@ -103,20 +103,35 @@ h1 {
 	margin: 10px;
 	padding: 10px;
 	text-align: left;
+	font-size: 24px;
 }
 
 #About a {
 	text-decoration: none;
 	width: 250px;
 	height: 30px;
-	background: #2B3C41;
+	background: #33798D;
 	color: #DBDBDB;
 	border: 2px solid #312B41;
 	border-radius: 4px;
+	font-size: 24px;
+	padding: 10px;
+}
+
+#About a:hover {
+	background: #90C9DA;
+	color: #252934;
 }
 
 #Portfolio {
 	padding: 20px;
+}
+
+#Portfolio p {
+	font-size: 24px;
+	text-align: left;
+	margin: 10px;
+	padding: 10px;
 }
 
 .skill-bars {
@@ -126,28 +141,39 @@ h1 {
 }
 
 .main-bar {
+	display: flex;
+	flex-direction: row;
 	height: 50px;
-	width: 200px;
+	width: 600px;
 	padding: 10px;
 	border: 1px solid black;
 }
 
-.filled-30 {
-	background-color: green;
-	width: 30%;
-	height: 20px;
+.main-bar i {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #8E80B3;
+	height: 30px;
+	width: 100px;
+}
+
+.filled-20 {
+	background-color: #745CB3;
+	width: 20%;
+	height: 30px;
+}
+
+.filled-40 {
+	background-color: #745CB3;
+	width: 40%;
+	height: 30px;
 }
 
 .filled-50 {
-	background-color: green;
+	background-color: #745CB3;
 	width: 50%;
-	height: 20px;
-}
-
-.filled-60 {
-	background-color: green;
-	width: 60%;
-	height: 20px;
+	height: 30px;
 }
 
 #Blog {
@@ -197,6 +223,7 @@ h1 {
   border-bottom: 4px solid #006400;
 }
 
+/*Found on https://stackoverflow.com/questions/37751375/instagram-new-logo-css-background*/
 .fa-instagram {
   background: #f09433; 
   background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
