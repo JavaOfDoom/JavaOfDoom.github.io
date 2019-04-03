@@ -1,6 +1,7 @@
 html, body {
 	text-align: center;
 	height: 100%;
+	background-color: #E5E5E5;
 }
 
 * {
@@ -134,7 +135,25 @@ h1 {
 	padding: 10px;
 }
 
+#pacman {
+    width: 0px;
+    height: 0px;
+    background-image: url("LAandMyself.jpg");
+    border-right: 60px solid transparent;
+    border-top: 60px solid red;
+    border-left: 60px solid red;
+    border-bottom: 60px solid red;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    }
+
 .skill-bars {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	font-size: 20px;
 	border: 2px solid black;
 	padding: 10px;
 	margin: 10px;
@@ -143,10 +162,9 @@ h1 {
 .main-bar {
 	display: flex;
 	flex-direction: row;
-	height: 50px;
-	width: 600px;
-	padding: 10px;
-	border: 1px solid black;
+	height: 30px;
+	width: 700px;
+	padding: 4px;
 }
 
 .main-bar i {
@@ -155,7 +173,7 @@ h1 {
 	align-items: center;
 	background-color: #8E80B3;
 	height: 30px;
-	width: 100px;
+	width: 130px;
 }
 
 .filled-20 {
@@ -173,6 +191,36 @@ h1 {
 .filled-50 {
 	background-color: #745CB3;
 	width: 50%;
+	height: 30px;
+}
+
+.empty-50 {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding-right: 10px;
+	background-color: #DDD0FF;
+	width: 50%;
+	height: 30px
+}
+
+.empty-60 {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding-right: 10px;
+	background-color: #DDD0FF;
+	width: 60%;
+	height: 30px;
+}
+
+.empty-80 {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding-right: 10px;
+	background-color: #DDD0FF;
+	width: 80%;
 	height: 30px;
 }
 
@@ -200,7 +248,7 @@ h1 {
 
 .fa-facebook {
   background: #3B5998;
-  color: white;
+  color: #E5E5E5;
 }
 
 .fa-github {
@@ -210,12 +258,12 @@ h1 {
 
 .fa-twitter {
   background: #55ACEE;
-  color: white;
+  color: #E5E5E5;
 }
 
 .fa-free-code-camp {
   background: #006400;
-  color: white;
+  color: #E5E5E5;
   padding-left:12px;
   width: 60px;
   height: 60px;
@@ -230,20 +278,20 @@ h1 {
   background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
   background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
-  color: white;
+  color: #E5E5E5;
 }
 
 .fa-linkedin {
   background: #007BB5;
-  color: white;
+  color: #E5E5E5;
 }
 
 .fa-envelope {
   background: #006600;
-  color: white;
+  color: #E5E5E5;
 }
 
 .fa-phone {
   background: #660099;
-  color: white;
+  color: #E5E5E5;
 }
