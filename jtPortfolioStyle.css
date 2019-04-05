@@ -97,26 +97,31 @@ h1 {
 }
 
 #About {
+	min-height: 700px;
 	padding: 20px;
 }
 
 #About p {
-	margin: 10px;
+	margin: 20px;
 	padding: 10px;
 	text-align: left;
 	font-size: 24px;
 }
 
+#About div {
+	margin-top: 100px;
+}
+
 #About a {
 	text-decoration: none;
-	width: 250px;
-	height: 30px;
-	background: #33798D;
 	color: #DBDBDB;
-	border: 2px solid #312B41;
-	border-radius: 4px;
 	font-size: 24px;
 	padding: 10px;
+	width: 350px;
+	height: 70px;
+	background: #33798D;
+	border: 2px solid #312B41;
+	border-radius: 4px;
 }
 
 #About a:hover {
@@ -125,6 +130,8 @@ h1 {
 }
 
 #Portfolio {
+	background-color: #6F6980;
+	min-height: 700px;
 	padding: 20px;
 }
 
@@ -134,20 +141,6 @@ h1 {
 	margin: 10px;
 	padding: 10px;
 }
-
-#pacman {
-    width: 0px;
-    height: 0px;
-    background-image: url("LAandMyself.jpg");
-    border-right: 60px solid transparent;
-    border-top: 60px solid red;
-    border-left: 60px solid red;
-    border-bottom: 60px solid red;
-    border-top-left-radius: 60px;
-    border-top-right-radius: 60px;
-    border-bottom-left-radius: 60px;
-    border-bottom-right-radius: 60px;
-    }
 
 .skill-bars {
 	display: flex;
@@ -222,6 +215,16 @@ h1 {
 	background-color: #DDD0FF;
 	width: 80%;
 	height: 30px;
+}
+
+.app-projects {
+	height: 500px;
+	width: 400px;
+	overflow: scroll;
+}
+
+.app-projects img {
+	height: 300px;
 }
 
 #Blog {
