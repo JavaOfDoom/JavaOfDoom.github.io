@@ -246,6 +246,12 @@ h1 {
 	padding: 20px;
 }
 
+#medium-widget {
+	display: flex;
+	margin: 30px;
+	padding: 30px;
+}
+
 #Contact {
 	padding: 20px;
 }
