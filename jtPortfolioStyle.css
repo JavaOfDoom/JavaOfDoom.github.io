@@ -21,6 +21,7 @@ header div {
 	display: flex;
 	justify-content: flex-start;
 	text-decoration: none;
+	font-size: 1.875em;
 	width: 30vw;
 	margin: 10px;
 	padding: 10px;
@@ -29,7 +30,6 @@ header div {
 header a {
 	display: flex;
 	text-decoration: none;
-	font-size: 30px;
 	color: #DBDBDB;
 }
 
@@ -56,7 +56,7 @@ nav ul {
 nav ul li {
 	display: flex;
 	padding: 10px;
-	font-size: 30px;
+	font-size: 1.875em;
 	margin: 10px;
 	text-decoration: none;
 }
@@ -65,7 +65,7 @@ nav ul li {
 	nav ul li {
 		padding: 4px;
 		margin-top: 4px;
-		font-size: 24px;
+		font-size: 1.5em;
 	}
 }
 
@@ -76,7 +76,7 @@ nav ul li a {
 }
 
 h1, h2, h3, h4, h5 {
-	font-size: 40px;
+	font-size: 2.5em;
 }
 
 #Welcome {
@@ -105,7 +105,7 @@ h1 {
 	margin: 20px;
 	padding: 10px;
 	text-align: left;
-	font-size: 24px;
+	font-size: 1.5em;
 }
 
 #About div {
@@ -115,7 +115,7 @@ h1 {
 #About a {
 	text-decoration: none;
 	color: #DBDBDB;
-	font-size: 24px;
+	font-size: 1.5em;
 	padding: 10px;
 	width: 350px;
 	height: 70px;
@@ -136,7 +136,7 @@ h1 {
 }
 
 #Portfolio p {
-	font-size: 24px;
+	font-size: 1.5em;
 	text-align: left;
 	margin: 10px;
 	padding: 10px;
@@ -146,7 +146,7 @@ h1 {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-end;
-	font-size: 20px;
+	font-size: 1.25em;
 	border: 2px solid black;
 	padding: 10px;
 	margin: 10px;
@@ -160,13 +160,13 @@ h1 {
 	padding: 4px;
 }
 
-.main-bar i {
+.skill-title {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	background-color: #8E80B3;
 	height: 30px;
-	width: 130px;
+	width: 150px;
 }
 
 .filled-20 {
@@ -248,12 +248,21 @@ h1 {
 
 #medium-widget {
 	display: flex;
+	justify-content: space-around;
 	margin: 30px;
 	padding: 30px;
 }
 
 #Contact {
+	background-color: #6F6980;
+	min-height: 400px;
 	padding: 20px;
+}
+
+#Contact p {
+	margin: 10px;
+	padding: 20px;
+	font-size: 1.5em;
 }
 
 #Contact .fab, .far, .fas {
@@ -318,4 +327,14 @@ h1 {
 .fa-phone {
   background: #660099;
   color: #E5E5E5;
+}
+
+footer {
+	width: 100%;
+	min-height: 40px;
+	background-color: #4A3F67;
+	display: flex;
+	color: #E5E5E5;
+	align-items: center;
+	justify-content: center;
 }
