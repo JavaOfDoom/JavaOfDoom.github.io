@@ -15,6 +15,7 @@ header {
 	min-height: 60px;
 	background-color: #4A3F67;
 	display: flex;
+	z-index: 999;
 }
 
 header div {
@@ -133,6 +134,7 @@ h1 {
 	background-color: #6F6980;
 	min-height: 700px;
 	padding: 20px;
+	color: #DBDBDB;
 }
 
 #Portfolio p {
@@ -142,10 +144,36 @@ h1 {
 	padding: 10px;
 }
 
+#profile-visuals {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
 #profile-image {
-	image-orientation: 270deg;
-	max-height: 300px;
-	max-width: 200px;
+	position: relative;
+	min-height: 300px;
+	min-width: 250px;
+	-webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 
+	50% 100%, 0% 75%, 0% 25%);
+	clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+	background: black;
+}
+
+#profile-image::before {
+	content: '';
+	position: absolute;
+	top: 4px;
+	left: 4px;
+	width: calc(100% - 8px);
+	height: calc(100% - 8px);
+	-webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 
+	50% 100%, 0% 75%, 0% 25%);
+	clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+	background: url(./joe-profile-pic.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 16em, contain;
 }
 
 .skill-bars {
@@ -156,6 +184,7 @@ h1 {
 	border: 2px solid black;
 	padding: 10px;
 	margin: 10px;
+	color: #000;
 }
 
 .main-bar {
@@ -263,6 +292,7 @@ h1 {
 	background-color: #6F6980;
 	min-height: 400px;
 	padding: 20px;
+	color: #DBDBDB;
 }
 
 #Contact p {
@@ -313,10 +343,14 @@ h1 {
 /*Found on https://stackoverflow.com/questions/37751375/instagram-new-logo-css-background*/
 .fa-instagram {
   background: #f09433; 
-  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
-  background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, 
+  #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+  background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,
+  #dc2743 50%,#cc2366 75%,#bc1888 100%); 
+  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,
+  #cc2366 75%,#bc1888 100%); 
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', 
+  endColorstr='#bc1888',GradientType=1 );
   color: #E5E5E5;
 }
 
