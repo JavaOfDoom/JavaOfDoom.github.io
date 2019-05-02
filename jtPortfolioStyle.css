@@ -266,9 +266,9 @@ h1 {
 }
 
 .app-projects {
-	height: 600px;
-	width: 300px;
-	overflow: scroll;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
 }
 
 .app-projects img {
