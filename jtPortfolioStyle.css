@@ -255,14 +255,28 @@ h1 {
 .projects {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: space-evenly;
 	margin: 40px 0;
 }
 
 .web-dev-projects {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: space-evenly;
+}
+
+.web-projects {
+	display: flex;
+	height: 300px;
+	width: 450px;
+	align-items: center;
+	text-decoration: none;
+	justify-content: center;
+	font-size: 1.7em;
+	color: #DBDBDB;
+	background: #4A3F67;
+	border: 2px solid black;
+	border-radius: 10px;
 }
 
 .app-projects {
