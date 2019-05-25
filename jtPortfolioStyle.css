@@ -7,6 +7,11 @@ html, body {
 * {
 	padding: 0;
 	margin: 0;
+	text-decoration: none;
+}
+
+a:hover, button:hover {
+	opacity: 0.5;
 }
 
 header {
@@ -21,8 +26,7 @@ header {
 header div {
 	display: flex;
 	justify-content: flex-start;
-	text-decoration: none;
-	font-size: 1.875em;
+	font-size: 1.875rem;
 	width: 30vw;
 	margin: 10px;
 	padding: 10px;
@@ -30,7 +34,6 @@ header div {
 
 header a {
 	display: flex;
-	text-decoration: none;
 	color: #DBDBDB;
 }
 
@@ -57,27 +60,25 @@ nav ul {
 nav ul li {
 	display: flex;
 	padding: 10px;
-	font-size: 1.875em;
+	font-size: 1.875rem;
 	margin: 10px;
-	text-decoration: none;
 }
 
 @media (max-width: 650px) {
 	nav ul li {
 		padding: 4px;
 		margin-top: 4px;
-		font-size: 1.5em;
+		font-size: 1.5rem;
 	}
 }
 
 nav ul li a {
 	display: flex;
-	text-decoration: none;
 	color: #DBDBDB;
 }
 
 h1, h2, h3, h4, h5 {
-	font-size: 2.5em;
+	font-size: 2.5rem;
 	padding: 40px 20px 20px 20px;
 }
 
@@ -107,28 +108,25 @@ h1 {
 	margin: 20px;
 	padding: 10px;
 	text-align: left;
-	font-size: 1.5em;
+	font-size: 1.5rem;
 }
 
-#About div {
+#About button {
 	margin: 100px 0;
-}
-
-#About a {
-	text-decoration: none;
 	color: #DBDBDB;
-	font-size: 1.5em;
+	font-size: 1.5rem;
 	padding: 10px;
 	width: 350px;
-	height: 70px;
+	height: 80px;
 	background: #33798D;
 	border: 2px solid #312B41;
 	border-radius: 4px;
 }
 
-#About a:hover {
+#About button:hover {
 	background: #90C9DA;
 	color: #252934;
+	opacity: 1;
 }
 
 #Portfolio {
@@ -139,7 +137,7 @@ h1 {
 }
 
 #Portfolio p {
-	font-size: 1.5em;
+	font-size: 1.5rem;
 	text-align: left;
 	margin: 10px;
 	padding: 10px;
@@ -171,7 +169,7 @@ h1 {
 	-webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 
 	50% 100%, 0% 75%, 0% 25%);
 	clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-	background: url(./joe-profile-pic.jpg);
+	background: url(./joe-profile-pic.png);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: 16em, contain;
@@ -182,7 +180,7 @@ h1 {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	font-size: 1.5em;
+	font-size: 1.5rem;
 	padding: 10px;
 	margin: 10px;
 	color: #000;
@@ -267,15 +265,14 @@ h1 {
 	justify-content: space-evenly;
 }
 
-.web-projects {
+.web-projects, .web-projects img {
 	display: flex;
-	height: 300px;
-	width: 450px;
+	height: 270px;
+	width: 480px;
 	margin: 20px;
 	align-items: center;
-	text-decoration: none;
 	justify-content: center;
-	font-size: 1.7em;
+	font-size: 1.7rem;
 	color: #DBDBDB;
 	background: #4A3F67;
 	border: 2px solid black;
@@ -288,9 +285,23 @@ h1 {
 	justify-content: space-around;
 }
 
-.app-projects img {
-	height: 450px;
+.app-projects button {
+	display: flexbox;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	align-content: space-between;
 	width: 250px;
+	background: #6F6980;
+	border: transparent;
+	color: #DBDBDB;
+	font-size: 1.5rem;
+}
+
+.app-projects img {
+	height: 400px;
+	width: 250px;
+	padding: 10px;
 	object-fit: cover;
 }
 
@@ -320,83 +331,80 @@ h1 {
 #Contact p {
 	margin: 10px;
 	padding: 20px;
-	font-size: 1.5em;
+	font-size: 1.5rem;
 }
 
 #Contact .fab, .far, .fas {
-  padding: 12px;
-  width: 64px;
-  height: 64px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 50%;
-  margin: 20px 5px;
-}
-
-.fa:hover {
-  opacity: 0.7;
-}
-
-.fa-facebook {
-  background: #3B5998;
-  color: #E5E5E5;
-}
-
-.fa-github {
-  background: #000;
-  color: grey;
-}
-
-.fa-twitter {
-  background: #55ACEE;
-  color: #E5E5E5;
-}
-
-.fa-free-code-camp {
-  background: #006400;
-  color: #E5E5E5;
-  padding-left:12px;
-  width: 60px;
-  height: 60px;
-  border-right: 10px solid #006400;
-  border-bottom: 4px solid #006400;
-}
-
-/*Found on https://stackoverflow.com/questions/37751375/instagram-new-logo-css-background*/
-.fa-instagram {
-  background: #f09433; 
-  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, 
-  #dc2743 50%, #cc2366 75%, #bc1888 100%); 
-  background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,
-  #dc2743 50%,#cc2366 75%,#bc1888 100%); 
-  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,
-  #cc2366 75%,#bc1888 100%); 
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', 
-  endColorstr='#bc1888',GradientType=1 );
-  color: #E5E5E5;
+	padding: 12px;
+	width: 96px;
+	height: 96px;
+	text-align: center;
+	border-radius: 50%;
+	border: 0px;
+	margin: 20px 5px;
 }
 
 .fa-linkedin {
-  background: #007BB5;
-  color: #E5E5E5;
+	background: #0077B5;
+	color: #E5E5E5;
+}
+
+.fa-github {
+	background: #211F1F;
+	color: #999;
+}
+
+.fa-twitter {
+	background: #1DA1F2;
+	color: #E5E5E5;
+}
+
+.fa-free-code-camp {
+	background: #006400;
+	color: #E5E5E5;
+}
+.fa-facebook {
+	background: #4267B2;
+	color: #E5E5E5;
+}
+
+.fa-instagram {
+	background:
+		/*left bottom*/		
+		radial-gradient(circle farthest-corner at 35% 90%, #FCCC63, transparent 50%),
+		radial-gradient(circle farthest-corner at 0 140%, #FCCC63, transparent 50%),
+		/*left top*/		
+		radial-gradient(ellipse farthest-corner at 0 -25%, #4C68D7, transparent 50%),
+		radial-gradient(ellipse farthest-corner at 20% -50%, #4C68D7, transparent 50%),
+		/*right top*/		
+		radial-gradient(ellipse farthest-corner at 100% 0, #8A3AB9, transparent 50%),
+		radial-gradient(ellipse farthest-corner at 60% -20%, #8A3AB9, transparent 50%),
+		/*right bottom*/		
+		radial-gradient(ellipse farthest-corner at 100% 100%, #BC2A8D, transparent),
+		/*create a base coat to smooth and corner gradients */
+		linear-gradient(#4C68D7, #BC2A8D 30%, #CD486D 50%, #FBAD50 70%, #FCCC63 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FBAD50', 
+	endColorstr='#4C68D7',GradientType=1 );
+	color: #E5E5E5;
 }
 
 .fa-envelope {
-  background: #006600;
-  color: #E5E5E5;
+	background: #00811F;
+	color: #E5E5E5;
 }
 
 .fa-phone {
-  background: #660099;
-  color: #E5E5E5;
+	background: #760089;
+	color: #E5E5E5;
 }
 
 footer {
 	width: 100%;
-	min-height: 40px;
+	min-height: 50px;
 	background-color: #4A3F67;
 	display: flex;
 	color: #E5E5E5;
 	align-items: center;
 	justify-content: center;
+	font-size: 1.5rem;
 }

@@ -4,7 +4,9 @@
 	<meta charset="utf-8" content="width=device-width, initial-scale=1.0">
 	<title>Joe Tiersma Professional Portfolio</title>
 	<link rel="stylesheet" type="text/css" href="jtPortfolioStyle.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" 
+	integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" 
+	crossorigin="anonymous">
 </head>
 <body>
 	<header>
@@ -47,7 +49,8 @@
 				the rest of the freeCodeCamp courses. I am freelancing and 
 				building fun side projects while I search for a company I can 
 				be a part of.</p>
-			<div><a href="#Contact">Do you want me to build something for you?</a></div>
+			<button onclick="window.location.href = '#Contact';">Do you want me to build 
+			something for you?</button>
 		</section>
 
 		<section id="Portfolio">
@@ -99,11 +102,16 @@
 
 			<section class="projects">
 				<div class="web-dev-projects">
-					<a href="https://heartsourcetherapy.com" target="blank" alt="Link to HeartSourceTherapy.com" class="web-projects">
-						HeartSourceTherapy Website Under Development
-					</a>
-					<a href="" alt="Link to AlternativeReality.com" class="web-projects">
-						AlternativeReality Website Under Development
+					<div>
+						<a href="https://heartsourcetherapy.com" target="blank" 
+						alt="Link to HeartSourceTherapy.com" class="web-projects" alt>
+						<img src="/HeartSource-screenshot.png">
+						</a>
+						<p>HeartSource Therapy was built using WordPress. Still in development.</p>
+					</div>
+					<a href="https://github.com/JavaOfDoom/Alternative-Reality" alt="Link to AlternativeReality.com" class="web-projects">
+						AlternativeReality website under development. It is being designed using
+						vanilla HTML and CSS.
 					</a>
 					<a href="#Contact" alt="Link to contact section" class="web-projects">
 						Your website or application could be featured here!
@@ -111,27 +119,34 @@
 				</div>
 
 				<div class="app-projects">
-					<a href="https://youtu.be/HwdOAgNZhb0" target="blank">
+					<button onclick="window.location.href='https://youtu.be/HwdOAgNZhb0';" target="blank">
 						<img src="mockup/JustJava.png">
-					</a>
-					<a href="https://youtu.be/ywLnKS_dDgk" target="blank">
+						Coffee ordering app
+					</button>
+					<button onclick="window.location.href='https://youtu.be/ywLnKS_dDgk';" target="blank">
 						<img src="mockup/CourtCounter.png">
-					</a>
-					<a href="https://youtu.be/9ye6Nm1a5qE" target="blank">
+						Baseball stats tracking app
+					</button>
+					<button onclick="window.location.href='https://youtu.be/9ye6Nm1a5qE';" target="blank">
 						<img src="mockup/TriviaApp.png">
-					</a>
-					<a href="https://youtu.be/uJ-1qeocSNY" target="blank">
+						Trivia app about Star Wars
+					</button>
+					<button onclick="window.location.href='https://youtu.be/uJ-1qeocSNY';" target="blank">
 						<img src="mockup/MusicalStructure.png">
-					</a>
-					<a href="https://youtu.be/7E2Vdvnc5PU" target="blank">
+						App for navigating a collection of music
+					</button>
+					<button onclick="window.location.href='https://youtu.be/7E2Vdvnc5PU';" target="blank">
 						<img src="mockup/TourGuide.png">
-					</a>
-					<a href="https://youtu.be/kbSKBx6-I9g" target="blank">
+						Take a tour of the Chicago Museum of Science and Industry
+					</button>
+					<button onclick="window.location.href='https://youtu.be/kbSKBx6-I9g';" target="blank">
 						<img src="mockup/NewsApp.png">
-					</a>
-					<a href="https://youtu.be/pse6d4-Ii08" target="blank">
+						Simple news app using API's and JSON
+					</button>
+					<button onclick="window.location.href='https://youtu.be/pse6d4-Ii08';" target="blank">
 						<img src="mockup/InventoryApp.png">
-					</a>
+						Inventory app for a bookstore
+					</button>
 				</div>
 			</section>
 
@@ -154,21 +169,22 @@
 		<section id="Contact">
 			<h5>Contact</h5>
 			<p>You can find me at...</p>
-			<a href="https://www.linkedin.com/in/joe-tiersma-b1318a151/" class="fab fa-linkedin fa-4x" target="_blank"></a>
+			<button onclick="window.location.href = 'https://www.linkedin.com/in/joe-tiersma-b1318a151/';" 
+			class="fab fa-linkedin fa-4x" target="blank" alt="Click to go to Linked In account"></button>
   
-			<a href="https://github.com/JavaOfDoom" class="fab fa-github fa-4x" target="_blank"></a>
+			<button onclick="window.location.href='https://github.com/JavaOfDoom';" class="fab fa-github fa-4x" target="_blank"></button>
 			  
-			<a href="https://twitter.com/java_of_doom" class="fab fa-twitter fa-4x" target="_blank"></a>
+			<button onclick="window.location.href='https://twitter.com/java_of_doom';" class="fab fa-twitter fa-4x" target="_blank"></button>
 			  
-			<a href="https://www.freecodecamp.org/javaofdoom" class="fab fa-free-code-camp fa-4x" target="_blank"></a>
+			<button onclick="window.location.href='https://www.freecodecamp.org/javaofdoom';" class="fab fa-free-code-camp fa-4x" target="_blank"></button>
 			
-			<a href="https://www.facebook.com/JavaOfDoom" class="fab fa-facebook fa-4x" target="_blank"></a>
+			<button onclick="window.location.href='https://www.facebook.com/JavaOfDoom';" class="fab fa-facebook fa-4x" target="_blank"></button>
 
-			<a href="https://www.instagram.com/java_of_doom/" class="fab fa-instagram fa-4x" target="_blank"></a>
+			<button onclick="window.location.href='https://www.instagram.com/java_of_doom/';" class="fab fa-instagram fa-4x" target="_blank"></button>
 			  
-			<a href="mailto:snowjava13@gmail.com" class="far fa-envelope fa-4x" target="_blank"></a>
+			<button onclick="window.location.href='mailto:snowjava13@gmail.com';" class="far fa-envelope fa-4x" target="_blank"></button>
 			  
-			<a href="tel:708-712-0425" class="fas fa-phone fa-4x" target="_blank"></a>
+			<button onclick="window.location.href='tel:708-712-0425';" class="fas fa-phone fa-4x" target="_blank"></button>
 		</section>
 
 	</main>
