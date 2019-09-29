@@ -6,6 +6,7 @@
 	<meta name="description" content="Professional portfolio website for Joe Tiersma, wed developer 
 	and mobile app developer.">
 	<title>Joe Tiersma Professional Portfolio</title>
+	<script src="./index.js"></script>
 	<link rel="stylesheet" type="text/css" href="jtPortfolioStyle.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" 
 	integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" 
@@ -14,25 +15,30 @@
 <body>
 	<header>
 		<div>
-			<p><a href="#Welcome">Joe Tiersma</a></p>
+			<section id="Welcome">
+				<h1>Welcome! My name is <mark>Joe Tiersma</mark> and I'm a front-end
+					web and mobile app developer.</h1>
+			</section>
 		</div>
+		<div id="sticky-header" class="sticky-header">
+			<div>
+				<p><a href="#Welcome">Joe Tiersma</a></p>
+			</div>
 
-		<nav>
-			<ul>
-				<li><a href="#About">About</a></li>
-				<li><a href="#Portfolio">Portfolio</a></li>
-				<li><a href="#Blog">Blog</a></li>
-				<li><a href="#Contact">Contact</a></li>
-			</ul>
-		</nav>
+			<nav>
+				<ul>
+					<li><a href="#About">About</a></li>
+					<li><a href="#Portfolio">Portfolio</a></li>
+					<li><a href="#Blog">Blog</a></li>
+					<li><a href="#Contact">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
 	</header>
 	
 	<main>
 
-		<section id="Welcome">
-			<h1>Welcome! My name is <mark>Joe Tiersma</mark> and I'm a front-end
-				 web and mobile app developer.</h1>
-		</section>
+		
 
 		<section id="About">
 			<h2>About Joe</h2>
@@ -109,7 +115,7 @@
 					<div>
 						<a href="https://heartsourcetherapy.com" target="blank" 
 						 class="web-projects" aria-label="heart source therapy">
-						<img src="/HeartSource-screenshot.png" alt="">
+						<img src="./assets/HeartSource-screenshot.png" alt="">
 						</a>
 						<p>HeartSource Therapy was built using WordPress. Still in development.</p>
 					</div>
@@ -127,37 +133,37 @@
 					<!-- <p>Android App Projects</p> -->
 					<a href="https://youtu.be/HwdOAgNZhb0" target="blank" 
 					aria-label="video of coffee ordering app">
-						<img src="mockup/JustJava.png" alt="">
+						<img src="./assets/JustJava.png" alt="">
 						Coffee ordering app
 					</a>
 					<a href="https://youtu.be/ywLnKS_dDgk" target="blank" 
 					aria-label="video of baseball stats tracking app">
-						<img src="mockup/CourtCounter.png" alt="">
+						<img src="./assets/CourtCounter.png" alt="">
 						Baseball stats tracking app
 					</a>
 					<a href="https://youtu.be/9ye6Nm1a5qE" target="blank" 
 					aria-label="video of trivia app">
-						<img src="mockup/TriviaApp.png" alt="">
+						<img src="./assets/TriviaApp.png" alt="">
 						Star Wars trivia app
 					</a>
 					<a href="https://youtu.be/uJ-1qeocSNY" target="blank" 
 					aria-label="video of music collection app">
-						<img src="mockup/MusicalStructure.png" alt="">
+						<img src="./assets/MusicalStructure.png" alt="">
 						App for navigating a collection of music
 					</a>
 					<a href="https://youtu.be/7E2Vdvnc5PU" target="blank" 
 					aria-label="video of tour guide app">
-						<img src="mockup/TourGuide.png" alt="">
+						<img src="./assets/TourGuide.png" alt="">
 						Chicago Museum of Science and Industry toug guide
 					</a>
 					<a href="https://youtu.be/kbSKBx6-I9g" target="blank" 
 					aria-label="video of news app">
-						<img src="mockup/NewsApp.png" alt="">
+						<img src="./assets/NewsApp.png" alt="">
 						Simple news app using API's and JSON
 					</a>
 					<a href="https://youtu.be/pse6d4-Ii08" target="blank" 
 					aria-label="video of bookstore inventory app">
-						<img src="mockup/InventoryApp.png" alt="">
+						<img src="./assets/InventoryApp.png" alt="">
 						Inventory app for a bookstore
 					</a>
 				</div>

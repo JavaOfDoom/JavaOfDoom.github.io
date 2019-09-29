@@ -15,8 +15,8 @@ a:hover {
 	opacity: 0.5;
 }
 
-header {
-	position: fixed;
+.sticky-header {
+	/* position: sticky; */
 	width: 100%;
 	min-height: 60px;
 	background-color: #4A3F67;
@@ -24,7 +24,7 @@ header {
 	z-index: 999;
 }
 
-header div {
+.sticky-header div {
 	display: flex;
 	justify-content: flex-start;
 	font-size: 1.875rem;
@@ -33,9 +33,14 @@ header div {
 	padding: 10px;
 }
 
-header a {
+.sticky-header a {
 	display: flex;
 	color: #DBDBDB;
+}
+
+.stick {
+	position: fixed;
+	top: 0;
 }
 
 nav {
@@ -169,7 +174,7 @@ h1 {
 	-webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 
 	50% 100%, 0% 75%, 0% 25%);
 	clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-	background: url(./joe-profile-pic.png);
+	background: url(./assets/joe-profile-pic.png);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: 16em, contain;
